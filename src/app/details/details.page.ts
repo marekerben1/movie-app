@@ -27,6 +27,8 @@ export class DetailsPage {
   public imageBaseUrl = 'https://image.tmdb.org/t/p';
   public movie: WritableSignal<MovieResult | null> = signal(null);
 
+
+
   @Input()
   set id(movieId: string) {
     this.movieService.getMovieDetails(movieId).subscribe((movie) => {
