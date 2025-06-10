@@ -38,6 +38,7 @@ export class DetailsPage {
     });
   }
 
+
   constructor() {
     addIcons({cashOutline,calendarOutline});
   }
